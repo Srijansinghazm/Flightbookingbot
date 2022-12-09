@@ -1,0 +1,38 @@
+{
+  "name": "shopping-store",
+  "utterances": {
+    "en": [
+      "I want to purchase [brand1](Samsung), [brand2](Whirlpool), [brand3](LG).",
+      "I want to make a payment."
+    ]
+  },
+  "slots": [
+    {
+      "id": "eXvbPEHYwZjLgTC-ez-x3",
+      "name": "Samsung",
+      "entities": [
+        "goods"
+      ],
+      "color": 1
+    },
+    {
+      "id": "3RJ4npii8fGIN67vWQIf6",
+      "name": "Whirlpool",
+      "entities": [
+        "goods"
+      ],
+      "color": 2
+    },
+    {
+      "id": "bDtoJc5OTrlvl_zBezqHW",
+      "name": "LG",
+      "entities": [
+        "goods"
+      ],
+      "color": 3
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "locked": false,
+  "details": {},
+  "skillChoice": {
+    "matchNLU": true,
+    "matchNumbers": true
+  },
+  "skillSendEmail": {
+    "transportConnectionString": "<<change me>>"
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "Small Talk",
+  "active": true,
+  "name": "Small Talk",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": []
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "flightbooking-bot",
+  "messaging": {
+    "clientId": "e75305d5-3bde-4e8b-a644-5e8f13daf427",
+    "clientToken": "7dc2775e-8b81-48df-8a50-39ba05a45c1c.kimKo+x1gURmxisesHW69g2Jze8AVlEyzo/azIfwWeQjhhkO3ZPTshZvTBG3lWLw+JKlNnpMKoposdpF/CZVnhid",
+    "channels": {},
+    "webhookToken": "C7g62YFXFx1P0w+Gu3J20ADF6N7FYQY5vcrOuR0oakv+rYA3w+xC4k3qv+CBLSGI1Zc5A9HxcOTAn7WB3TDnr9JW"
+  },
+  "cloud": {
+    "botId": "93fabcca-4ea1-495e-be71-fc30a1b30585",
+    "workspaceId": "f86aa59c-cb60-4c8e-80b3-478e5c47e19e"
+  },
+  "nluModels": {
+    "en": "d29f7bf9ed74833b.b2eeb23efb448373.6528.en"
+  }
+}

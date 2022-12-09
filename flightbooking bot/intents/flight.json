@@ -1,0 +1,31 @@
+{
+  "name": "flight",
+  "utterances": {
+    "en": [
+      "I want to fly to [Paris](toCity)",
+      "I want to book a flight",
+      "I want to fly from [London](fromCity) to [Paris](toCity)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "sKORFgUmd0LvQENcuxIqE",
+      "name": "fromCity",
+      "entities": [
+        "city"
+      ],
+      "color": 1
+    },
+    {
+      "id": "pwpf292VGwCUkPO_m7GyR",
+      "name": "toCity",
+      "entities": [
+        "city"
+      ],
+      "color": 2
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

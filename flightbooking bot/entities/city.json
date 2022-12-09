@@ -1,0 +1,19 @@
+{
+  "id": "city",
+  "name": "city",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "Paris",
+      "synonyms": []
+    },
+    {
+      "name": "London",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [],
+  "pattern": ""
+}

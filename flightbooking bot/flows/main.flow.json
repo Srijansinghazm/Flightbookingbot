@@ -1,0 +1,139 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name==='flight'",
+          "conditionType": "raw",
+          "node": "node-edc9"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-79b9"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "a3c192ffcc",
+      "name": "node-79b9",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-ssSxFe"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "81aa03027d",
+      "name": "node-edc9",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-4f2f"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"toCity\",\"value\":\"{{event.nlu.slots.toCity.value}}\"}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"fromCity\",\"value\":\"{{event.nlu.slots.fromCity.value}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "d6fe3afcad",
+      "name": "node-4f2f",
+      "next": [
+        {
+          "condition": "temp.fromCity",
+          "conditionType": "raw",
+          "node": "node-e512"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-b9ac"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6beefc1f28",
+      "name": "node-b9ac",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-e512"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lKmEkH"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"fromCity\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "59129da339",
+      "name": "node-e512",
+      "next": [
+        {
+          "condition": "temp.toCity",
+          "conditionType": "raw",
+          "node": "node-ca20"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-37b2"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9fd93bad31",
+      "name": "node-37b2",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-ca20"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K1L6Wf"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"toCity\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "85f9dd8eb3",
+      "name": "node-ca20",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-fdBrfz"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "builtin_text-iVBzXn",
+    "formData": {
+      "text$en": "I'm sorry, I did not understand. Please ask me something else.",
+      "typing$en": true,
+      "text$fr": "Pardon, je n'ai pas compris. Veuillez me poser un autre question.",
+      "typing$fr": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-07-01T18:28:03.566Z",
+    "modifiedOn": "2019-07-01T18:31:39.862Z"
+  },
+  {
+    "id": "builtin_text-error",
+    "formData": {
+      "text$en": "😯 Oops! We've got a problem. Please try something else while we're fixing it 🔨",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-09-03T18:58:10.702Z",
+    "modifiedOn": "2019-09-03T18:58:10.702Z"
+  },
+  {
+    "id": "builtin_text-ssSxFe",
+    "formData": {
+      "text$en": "Hi, I'm only supporting flights for now. Sorry!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-08T09:31:17.926Z",
+    "modifiedOn": "2022-12-08T09:31:17.926Z"
+  },
+  {
+    "id": "builtin_text-lKmEkH",
+    "formData": {
+      "text$en": "Which city are you departing from? Please type its name!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-08T10:01:14.723Z",
+    "modifiedOn": "2022-12-08T10:01:14.723Z"
+  },
+  {
+    "id": "builtin_text-K1L6Wf",
+    "formData": {
+      "text$en": "Please enter the name of your destination city!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-08T10:08:38.943Z",
+    "modifiedOn": "2022-12-08T10:08:38.943Z"
+  },
+  {
+    "id": "builtin_text-fdBrfz",
+    "formData": {
+      "text$en": "Ok, I'll book a ticket for you for a flight from {{temp.fromCity}} to {{temp.toCity}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-08T10:14:50.438Z",
+    "modifiedOn": "2022-12-08T10:14:50.438Z"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "locked": false,
+  "details": {},
+  "skillChoice": {
+    "matchNLU": true,
+    "matchNumbers": true
+  },
+  "skillSendEmail": {
+    "transportConnectionString": "<<change me>>"
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "Small Talk",
+  "active": true,
+  "name": "Small Talk",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": []
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "chatbot",
+  "messaging": {
+    "clientId": "5fe6f9a6-0c51-4888-80f7-e1a35c2885d7",
+    "clientToken": "4cfa730f-bed0-4024-bca2-6368de74d14d.PR5tH34ATkm0/922iSviJGsj57EsmYs/0NHtyx1sC++7MuVHsgExxktW+oEcpWqzBl+gdBCzKoVLucBd4cZWb4Ew",
+    "channels": {},
+    "webhookToken": "MmNZ/R+TMwpNjRtOjCIaOzXis3UuUSpMOJlc9D6BqB9AlWPRGvNhEdLWYqd1eNBOaf6SflJy+ocDwEnD0ABA+6Rb"
+  },
+  "cloud": {
+    "botId": "21c0aa15-94dc-4060-a9c5-2de0931fa282",
+    "workspaceId": "f86aa59c-cb60-4c8e-80b3-478e5c47e19e"
+  }
+}

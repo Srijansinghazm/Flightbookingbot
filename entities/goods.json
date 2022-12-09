@@ -1,0 +1,27 @@
+{
+  "id": "goods",
+  "name": "goods",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "Television",
+      "synonyms": []
+    },
+    {
+      "name": "Refrigerator",
+      "synonyms": []
+    },
+    {
+      "name": "Washing Machine",
+      "synonyms": []
+    },
+    {
+      "name": "AC",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [],
+  "pattern": ""
+}

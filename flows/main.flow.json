@@ -1,0 +1,185 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [
+      "say #!builtin_text-e6PBMd"
+    ],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'none'",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "5e31ddeea9",
+      "name": "node-7b8d",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name==='shopping'",
+          "conditionType": "raw",
+          "node": "node-118f"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-e1db"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c8a0d2b5e6",
+      "name": "node-e1db",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-e6PBMd"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "457e2e12d5",
+      "name": "node-118f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-2125"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"brand3\",\"value\":\"{{event.nlu.slots.brand3.value}}\"}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"brand2\",\"value\":\"{{event.nlu.slots.brand2.value}}\"}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"brand1\",\"value\":\"{{event.nlu.slots.brand1.value}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5bff56931a",
+      "name": "node-2125",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-756a"
+        },
+        {
+          "condition": "temp.brand1",
+          "conditionType": "raw",
+          "node": "node-67f4"
+        },
+        {
+          "condition": "temp.brand2\n",
+          "conditionType": "raw",
+          "node": ""
+        },
+        {
+          "condition": "temp.brand3",
+          "conditionType": "raw",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bc69b8084e",
+      "name": "node-756a",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-67f4"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-qT-py6"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"brand1\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "a6917e6bfd",
+      "name": "node-67f4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-bc31"
+        },
+        {
+          "condition": "temp.brand2",
+          "conditionType": "raw",
+          "node": ""
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-fe17"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a72da0291f",
+      "name": "node-fe17",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-bc31"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-sFVsvy"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"brand2\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "279350b38f",
+      "name": "node-bc31",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Kkjhsh"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

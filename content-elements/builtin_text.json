@@ -1,0 +1,68 @@
+[
+  {
+    "id": "builtin_text-iVBzXn",
+    "formData": {
+      "text$en": "I'm sorry, I did not understand. Please ask me something else.",
+      "typing$en": true,
+      "text$fr": "Pardon, je n'ai pas compris. Veuillez me poser un autre question.",
+      "typing$fr": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-07-01T18:28:03.566Z",
+    "modifiedOn": "2019-07-01T18:31:39.862Z"
+  },
+  {
+    "id": "builtin_text-error",
+    "formData": {
+      "text$en": "😯 Oops! We've got a problem. Please try something else while we're fixing it 🔨",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-09-03T18:58:10.702Z",
+    "modifiedOn": "2019-09-03T18:58:10.702Z"
+  },
+  {
+    "id": "builtin_text-e6PBMd",
+    "formData": {
+      "text$en": "Hi I'm only supporting shopping goods for now, Sorry!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-07T10:31:35.764Z",
+    "modifiedOn": "2022-12-07T10:31:35.764Z"
+  },
+  {
+    "id": "builtin_text-qT-py6",
+    "formData": {
+      "text$en": "Which brand do you want.Please enter its name!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-07T11:18:07.394Z",
+    "modifiedOn": "2022-12-07T11:18:07.394Z"
+  },
+  {
+    "id": "builtin_text-sFVsvy",
+    "formData": {
+      "text$en": "Enter the name of brand2\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-07T11:37:26.584Z",
+    "modifiedOn": "2022-12-07T11:37:26.584Z"
+  },
+  {
+    "id": "builtin_text-Kkjhsh",
+    "formData": {
+      "text$en": "ok I'll pick that brand for you{{temp.brand1}} to{{ temp.brand2}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-07T11:44:27.156Z",
+    "modifiedOn": "2022-12-07T11:45:53.387Z"
+  }
+]
